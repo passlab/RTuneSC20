@@ -2,6 +2,9 @@
 
 The results of the experiment presented in the paper were performed using two machines. One  is  a computing  server  that  has  two  Intel  Xeon  E5-2699v3  CPUs for total 36 cores at 2.3 GHz and 256 GB main memory. Ubuntu 18.04.3 LTS with Linux kernel 4.15.0  is  the  OS.  Clang/LLVM  9.0.0  compiler  and  OpenMP runtime  are  used  to  compile  the  programs. Another machine is LLNL Pascal  cluster.  Each  cluster  node  has  two  Intel  Xeon  E5-2695 v4 CPUs for total 36 cores, and 256 GB main memory. Red  Hat  Enterprise  Linux  Server  release  7.7  (Maipo),  kernel 3.10.0,  MVAPICH2  v2.3  and  Intel  19.0.4  compiler  are  the software environment.
 
+Thus a standard Linux machine with OpenMP and MPI support (OpenMP compiler such as GNU or Clang/LLVM compiler)
+and MPI library (MPICH, OpenMPI, etc) should be sufficient to run the program. 
+
 ## Steps:
 1. clone the repository and go to the repository from a Linux terminal
 
