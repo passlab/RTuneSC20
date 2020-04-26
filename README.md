@@ -12,7 +12,7 @@ cd RTuneSC20
 
 ### Objective 1: 
 
-1. change to objective1/LULESH folder
+1. change to `objective1/LULESH` folder
 
 ```
 cd objective1/LULESH
@@ -23,7 +23,7 @@ cd objective1/LULESH
 
 ### Objective 2:
 
-1. change to objective2/jacobi folder
+1. change to `objective2/jacobi` folder
 ```
 cd objective2/jacobi
 
@@ -31,9 +31,38 @@ cd objective2/jacobi
 ```
 
 ### Objective 3: 
-1. change to objective3 folder
-```
-cd objective3
 
+1. change to `objective3` folder and create build and install folder for rtune library
+    ```
+    cd objective3
+    mkdir rtune-build rtune-install
+    ```
+1. change to `rtune-build` folder, build rtune library and install the library in the `rtune-install` folder
+    ```
+    cd rtune-build
+    cmake -DCMAKE_INSTALL_PREFIX=../rtune-install ../rtune 
+    make
+    make install
 
-```
+    ```
+1. change to `objective3/LULESH` folder, and create both the clean LULESH binary (`lulesh2.0-clean`) and RTune-optimized LULESH binary (`lulesh2.0-rtune`)
+
+    ```
+    make -f Makefile-rtune 
+    make -f Makefile-clean
+    ```
+1. execute the `batch_run.sh` script to generate the results for LULESH shown in the paper
+
+    ```
+    ./batch_run.sh
+    ```
+1. change to `objective3/jacobi` folder, and create both the clean jacobi binary (`jacobi-clean`) and RTune-optimized jacobi binary (`jacobi-rtune`)
+    ```
+    make
+    ```
+1. execute the `clean_batch_run.sh` and `rtune_batch_run.sh` scripts to generate the jacobi results shown in the paper
+    ```
+    ./clean_batch_run.sh
+    ./rtune_batch_run.sh
+    ```
+    
