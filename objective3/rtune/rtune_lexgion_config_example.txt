@@ -1,0 +1,50 @@
+# This is the configuration file to provide setting for rtune to auto-tune a
+# user-specified region using RTune_begin and RTune_end, a parallel region,
+# or a worksharing region.
+#
+# So far, RTune recognize the following keys (defined in static const char *config_keys[]
+# array of rtune_runtime.h file).
+        "rtune_enabled",  //true or false: to enable rtune, which will enable rtune_enabled_num_threads
+        "rtune_log",      //true or false: to enable logging of tuning process
+        "rtune_target",   //useless
+        "rtune_num_runs_per_tune", //int number: number of runs to collect and record
+        "rtune_start_run",         //int number, the first runs to start tuning, default 1, so we can skip some runs at the beginning
+
+        "rtune_enabled_num_threads", //true or false: useless or redundant now with rtune_enabled
+        "max_num_threads",   //max number of threads
+        "min_num_threads",
+        "num_threads",
+        "rtune_initial_num_threads", //initial thread to start with
+        "threshold_best2fixed_num_threads", //useless
+
+        //the following is useless right now, since cpufreq tuning is too tricky
+        "rtune_enabled_frequency",
+        "cpufreq_governor", /* because of cpufreq_governor is char * type, twice the size of an int */
+        "rtune_perthread_frequency",
+        "threshold_memboundness",
+        "threshold_best2fixed_frequency",
+
+        "threshold_edp",
+
+
+# Restrictions for using those keys to provide configuration:
+# 1) The value for each of the keys could be either an integer, TRUE or FALSE.
+# 2) Each setting should use one line and only one setting is allowed in a line.
+# 3) When providing the setting, e.g. max_num_threads = 72, at least one whitespace is required
+#    before and after the '='.
+# 4) The valid value for 'rtune_target' key is 0 (for RTUNE_PE_TRADEOFF), 1 (for RTUNE_PERFORMANCE),
+#    2 (for RTUNE_ENERGY) and 3 (for RTUNE_EDP).
+
+# global section of the configuration and can be considered as the default setting for all the
+# lexgions if their configuration are not explicitly provided in this file.
+
+max_num_threads = 72
+min_num_threads = 16
+num_threads = 32
+rtune_enabled = false
+
+[lexgion.0x4235fc4]
+max_num_threads = 72
+min_num_threads = 16
+num_threads = 32
+rtune_enabled = false

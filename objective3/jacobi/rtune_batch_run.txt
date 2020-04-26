@@ -1,0 +1,400 @@
+jacobi 64 64 0.0543 1e-10 1 5000
+------------------------------------------------------------------------------------------------------
+seq elapsed time(ms):            0
+MFLOPS:          inf
+Setting 16 num_threads that delivers the best  0.05ms perf
+Setting 8 num_threads that delivers the best overal perf/energy tradeoff 0.05ms perf.
+compared with 16 threads of the best 0.05ms perf, derivative (per-thread differential) is 0.01
+OpenMP (36 threads) elapsed time(ms):           75
+MFLOPS:      3331.47
+Solution Error: 0.00820414
+jacobi 64 64 0.0543 1e-10 1 5000
+------------------------------------------------------------------------------------------------------
+seq elapsed time(ms):            0
+MFLOPS:          inf
+Setting 16 num_threads that delivers the best  0.03ms perf
+Setting 10 num_threads that delivers the best overal perf/energy tradeoff 0.03ms perf.
+compared with 16 threads of the best 0.03ms perf, derivative (per-thread differential) is 0.02
+OpenMP (36 threads) elapsed time(ms):         70.4
+MFLOPS:      3549.15
+Solution Error: 0.00820414
+jacobi 64 64 0.0543 1e-10 1 5000
+------------------------------------------------------------------------------------------------------
+seq elapsed time(ms):            0
+MFLOPS:          inf
+Setting 16 num_threads that delivers the best  0.03ms perf
+Setting 8 num_threads that delivers the best overal perf/energy tradeoff 0.03ms perf.
+compared with 16 threads of the best 0.03ms perf, derivative (per-thread differential) is 0.03
+OpenMP (36 threads) elapsed time(ms):         80.5
+MFLOPS:      3103.85
+Solution Error: 0.00820414
+jacobi 64 64 0.0543 1e-10 1 5000
+------------------------------------------------------------------------------------------------------
+seq elapsed time(ms):            0
+MFLOPS:          inf
+Setting 16 num_threads that delivers the best  0.03ms perf
+Setting 8 num_threads that delivers the best overal perf/energy tradeoff 0.03ms perf.
+compared with 16 threads of the best 0.03ms perf, derivative (per-thread differential) is 0.04
+OpenMP (36 threads) elapsed time(ms):         72.7
+MFLOPS:      3436.86
+Solution Error: 0.00820414
+jacobi 64 64 0.0543 1e-10 1 5000
+------------------------------------------------------------------------------------------------------
+seq elapsed time(ms):            0
+MFLOPS:          inf
+Setting 16 num_threads that delivers the best  0.03ms perf
+Setting 12 num_threads that delivers the best overal perf/energy tradeoff 0.03ms perf.
+compared with 16 threads of the best 0.03ms perf, derivative (per-thread differential) is 0.03
+OpenMP (36 threads) elapsed time(ms):         75.1
+MFLOPS:      3327.03
+Solution Error: 0.00820414
+jacobi 64 64 0.0543 1e-10 1 5000
+------------------------------------------------------------------------------------------------------
+seq elapsed time(ms):            0
+MFLOPS:          inf
+Setting 16 num_threads that delivers the best  0.03ms perf
+Setting 12 num_threads that delivers the best overal perf/energy tradeoff 0.03ms perf.
+compared with 16 threads of the best 0.03ms perf, derivative (per-thread differential) is 0.03
+OpenMP (36 threads) elapsed time(ms):         75.6
+MFLOPS:      3305.03
+Solution Error: 0.00820414
+jacobi 64 64 0.0543 1e-10 1 5000
+------------------------------------------------------------------------------------------------------
+seq elapsed time(ms):            0
+MFLOPS:          inf
+Setting 16 num_threads that delivers the best  0.03ms perf
+Setting 8 num_threads that delivers the best overal perf/energy tradeoff 0.03ms perf.
+compared with 16 threads of the best 0.03ms perf, derivative (per-thread differential) is 0.03
+OpenMP (36 threads) elapsed time(ms):         73.3
+MFLOPS:      3408.73
+Solution Error: 0.00820414
+jacobi 64 64 0.0543 1e-10 1 5000
+------------------------------------------------------------------------------------------------------
+seq elapsed time(ms):            0
+MFLOPS:          inf
+Setting 10 num_threads that delivers the best  0.03ms perf
+Setting 6 num_threads that delivers the best overal perf/energy tradeoff 0.04ms perf.
+compared with 10 threads of the best 0.03ms perf, derivative (per-thread differential) is 0.04
+OpenMP (36 threads) elapsed time(ms):         81.8
+MFLOPS:      3054.52
+Solution Error: 0.00820414
+jacobi 64 64 0.0543 1e-10 1 5000
+------------------------------------------------------------------------------------------------------
+seq elapsed time(ms):            0
+MFLOPS:          inf
+Setting 16 num_threads that delivers the best  0.03ms perf
+Setting 8 num_threads that delivers the best overal perf/energy tradeoff 0.03ms perf.
+compared with 16 threads of the best 0.03ms perf, derivative (per-thread differential) is 0.04
+OpenMP (36 threads) elapsed time(ms):         75.1
+MFLOPS:      3327.03
+Solution Error: 0.00820414
+jacobi 64 64 0.0543 1e-10 1 5000
+------------------------------------------------------------------------------------------------------
+seq elapsed time(ms):            0
+MFLOPS:          inf
+Setting 16 num_threads that delivers the best  0.03ms perf
+Setting 12 num_threads that delivers the best overal perf/energy tradeoff 0.03ms perf.
+compared with 16 threads of the best 0.03ms perf, derivative (per-thread differential) is 0.02
+OpenMP (36 threads) elapsed time(ms):         77.2
+MFLOPS:      3236.53
+Solution Error: 0.00820414
+jacobi 128 128 0.0543 1e-10 1 5000
+------------------------------------------------------------------------------------------------------
+seq elapsed time(ms):            0
+MFLOPS:          inf
+Setting 22 num_threads that delivers the best  0.05ms perf
+Setting 16 num_threads that delivers the best overal perf/energy tradeoff 0.06ms perf.
+compared with 22 threads of the best 0.05ms perf, derivative (per-thread differential) is 0.02
+OpenMP (36 threads) elapsed time(ms):        135.7
+MFLOPS:      7604.57
+Solution Error: 0.00413419
+jacobi 128 128 0.0543 1e-10 1 5000
+------------------------------------------------------------------------------------------------------
+seq elapsed time(ms):            0
+MFLOPS:          inf
+Setting 26 num_threads that delivers the best  0.05ms perf
+Setting 20 num_threads that delivers the best overal perf/energy tradeoff 0.05ms perf.
+compared with 26 threads of the best 0.05ms perf, derivative (per-thread differential) is 0.02
+OpenMP (36 threads) elapsed time(ms):        129.8
+MFLOPS:      7950.23
+Solution Error: 0.00413419
+jacobi 128 128 0.0543 1e-10 1 5000
+------------------------------------------------------------------------------------------------------
+seq elapsed time(ms):            0
+MFLOPS:          inf
+Setting 10 num_threads that delivers the best  0.08ms perf
+Setting 8 num_threads that delivers the best overal perf/energy tradeoff 0.09ms perf.
+compared with 10 threads of the best 0.08ms perf, derivative (per-thread differential) is 0.03
+OpenMP (36 threads) elapsed time(ms):        187.2
+MFLOPS:       5512.5
+Solution Error: 0.00413419
+jacobi 128 128 0.0543 1e-10 1 5000
+------------------------------------------------------------------------------------------------------
+seq elapsed time(ms):            0
+MFLOPS:          inf
+Setting 22 num_threads that delivers the best  0.05ms perf
+Setting 18 num_threads that delivers the best overal perf/energy tradeoff 0.05ms perf.
+compared with 22 threads of the best 0.05ms perf, derivative (per-thread differential) is 0.00
+OpenMP (36 threads) elapsed time(ms):        127.2
+MFLOPS:      8112.74
+Solution Error: 0.00413419
+jacobi 128 128 0.0543 1e-10 1 5000
+------------------------------------------------------------------------------------------------------
+seq elapsed time(ms):            0
+MFLOPS:          inf
+Setting 24 num_threads that delivers the best  0.05ms perf
+Setting 22 num_threads that delivers the best overal perf/energy tradeoff 0.05ms perf.
+compared with 24 threads of the best 0.05ms perf, derivative (per-thread differential) is 0.00
+OpenMP (36 threads) elapsed time(ms):          116
+MFLOPS:      8896.03
+Solution Error: 0.00413419
+jacobi 128 128 0.0543 1e-10 1 5000
+------------------------------------------------------------------------------------------------------
+seq elapsed time(ms):            0
+MFLOPS:          inf
+Setting 22 num_threads that delivers the best  0.05ms perf
+Setting 16 num_threads that delivers the best overal perf/energy tradeoff 0.06ms perf.
+compared with 22 threads of the best 0.05ms perf, derivative (per-thread differential) is 0.02
+OpenMP (36 threads) elapsed time(ms):        130.7
+MFLOPS:      7895.49
+Solution Error: 0.00413419
+jacobi 128 128 0.0543 1e-10 1 5000
+------------------------------------------------------------------------------------------------------
+seq elapsed time(ms):            0
+MFLOPS:          inf
+Setting 28 num_threads that delivers the best  0.04ms perf
+Setting 18 num_threads that delivers the best overal perf/energy tradeoff 0.05ms perf.
+compared with 28 threads of the best 0.04ms perf, derivative (per-thread differential) is 0.02
+OpenMP (36 threads) elapsed time(ms):        126.9
+MFLOPS:      8131.91
+Solution Error: 0.00413419
+jacobi 128 128 0.0543 1e-10 1 5000
+------------------------------------------------------------------------------------------------------
+seq elapsed time(ms):            0
+MFLOPS:          inf
+Setting 26 num_threads that delivers the best  0.05ms perf
+Setting 20 num_threads that delivers the best overal perf/energy tradeoff 0.05ms perf.
+compared with 26 threads of the best 0.05ms perf, derivative (per-thread differential) is 0.01
+OpenMP (36 threads) elapsed time(ms):        131.8
+MFLOPS:      7829.59
+Solution Error: 0.00413419
+jacobi 128 128 0.0543 1e-10 1 5000
+------------------------------------------------------------------------------------------------------
+seq elapsed time(ms):            0
+MFLOPS:          inf
+Setting 16 num_threads that delivers the best  0.06ms perf
+Setting 14 num_threads that delivers the best overal perf/energy tradeoff 0.06ms perf.
+compared with 16 threads of the best 0.06ms perf, derivative (per-thread differential) is 0.02
+OpenMP (36 threads) elapsed time(ms):        145.7
+MFLOPS:      7082.64
+Solution Error: 0.00413419
+jacobi 128 128 0.0543 1e-10 1 5000
+------------------------------------------------------------------------------------------------------
+seq elapsed time(ms):            0
+MFLOPS:          inf
+Setting 16 num_threads that delivers the best  0.06ms perf
+Setting 14 num_threads that delivers the best overal perf/energy tradeoff 0.06ms perf.
+compared with 16 threads of the best 0.06ms perf, derivative (per-thread differential) is 0.05
+OpenMP (36 threads) elapsed time(ms):        142.5
+MFLOPS:      7241.68
+Solution Error: 0.00413419
+jacobi 256 256 0.0543 1e-10 1 5000
+------------------------------------------------------------------------------------------------------
+seq elapsed time(ms):            0
+MFLOPS:          inf
+Setting 32 num_threads that delivers the best  0.22ms perf
+Setting 8 num_threads that delivers the best overal perf/energy tradeoff 0.31ms perf.
+compared with 32 threads of the best 0.22ms perf, derivative (per-thread differential) is 0.02
+OpenMP (36 threads) elapsed time(ms):        642.1
+MFLOPS:      6530.98
+Solution Error: 0.00207517
+jacobi 256 256 0.0543 1e-10 1 5000
+------------------------------------------------------------------------------------------------------
+seq elapsed time(ms):            0
+MFLOPS:          inf
+Setting 30 num_threads that delivers the best  0.11ms perf
+Setting 26 num_threads that delivers the best overal perf/energy tradeoff 0.12ms perf.
+compared with 30 threads of the best 0.11ms perf, derivative (per-thread differential) is 0.02
+OpenMP (36 threads) elapsed time(ms):        282.3
+MFLOPS:      14854.9
+Solution Error: 0.00207517
+jacobi 256 256 0.0543 1e-10 1 5000
+------------------------------------------------------------------------------------------------------
+seq elapsed time(ms):            0
+MFLOPS:          inf
+Setting 22 num_threads that delivers the best  0.13ms perf
+Setting 20 num_threads that delivers the best overal perf/energy tradeoff 0.14ms perf.
+compared with 22 threads of the best 0.13ms perf, derivative (per-thread differential) is 0.04
+OpenMP (36 threads) elapsed time(ms):          343
+MFLOPS:      12226.1
+Solution Error: 0.00207517
+jacobi 256 256 0.0543 1e-10 1 5000
+------------------------------------------------------------------------------------------------------
+seq elapsed time(ms):            0
+MFLOPS:          inf
+Setting 22 num_threads that delivers the best  0.13ms perf
+Setting 20 num_threads that delivers the best overal perf/energy tradeoff 0.14ms perf.
+compared with 22 threads of the best 0.13ms perf, derivative (per-thread differential) is 0.03
+OpenMP (36 threads) elapsed time(ms):        338.1
+MFLOPS:      12403.3
+Solution Error: 0.00207517
+jacobi 256 256 0.0543 1e-10 1 5000
+------------------------------------------------------------------------------------------------------
+seq elapsed time(ms):            0
+MFLOPS:          inf
+Setting 30 num_threads that delivers the best  0.11ms perf
+Setting 26 num_threads that delivers the best overal perf/energy tradeoff 0.12ms perf.
+compared with 30 threads of the best 0.11ms perf, derivative (per-thread differential) is 0.02
+OpenMP (36 threads) elapsed time(ms):        275.6
+MFLOPS:        15216
+Solution Error: 0.00207517
+jacobi 256 256 0.0543 1e-10 1 5000
+------------------------------------------------------------------------------------------------------
+seq elapsed time(ms):            0
+MFLOPS:          inf
+Setting 22 num_threads that delivers the best  0.15ms perf
+Setting 18 num_threads that delivers the best overal perf/energy tradeoff 0.16ms perf.
+compared with 22 threads of the best 0.15ms perf, derivative (per-thread differential) is 0.02
+OpenMP (36 threads) elapsed time(ms):        389.9
+MFLOPS:      10755.4
+Solution Error: 0.00207517
+jacobi 256 256 0.0543 1e-10 1 5000
+------------------------------------------------------------------------------------------------------
+seq elapsed time(ms):            0
+MFLOPS:          inf
+Setting 32 num_threads that delivers the best  0.23ms perf
+Setting 10 num_threads that delivers the best overal perf/energy tradeoff 0.28ms perf.
+compared with 32 threads of the best 0.23ms perf, derivative (per-thread differential) is 0.01
+OpenMP (36 threads) elapsed time(ms):        592.3
+MFLOPS:      7080.09
+Solution Error: 0.00207517
+jacobi 256 256 0.0543 1e-10 1 5000
+------------------------------------------------------------------------------------------------------
+seq elapsed time(ms):            0
+MFLOPS:          inf
+Setting 34 num_threads that delivers the best  0.24ms perf
+Setting 10 num_threads that delivers the best overal perf/energy tradeoff 0.26ms perf.
+compared with 34 threads of the best 0.24ms perf, derivative (per-thread differential) is 0.00
+OpenMP (36 threads) elapsed time(ms):        548.3
+MFLOPS:      7648.26
+Solution Error: 0.00207517
+jacobi 256 256 0.0543 1e-10 1 5000
+------------------------------------------------------------------------------------------------------
+seq elapsed time(ms):            0
+MFLOPS:          inf
+Setting 26 num_threads that delivers the best  0.12ms perf
+Setting 22 num_threads that delivers the best overal perf/energy tradeoff 0.13ms perf.
+compared with 26 threads of the best 0.12ms perf, derivative (per-thread differential) is 0.03
+OpenMP (36 threads) elapsed time(ms):        316.4
+MFLOPS:      13253.9
+Solution Error: 0.00207517
+jacobi 256 256 0.0543 1e-10 1 5000
+------------------------------------------------------------------------------------------------------
+seq elapsed time(ms):            0
+MFLOPS:          inf
+Setting 22 num_threads that delivers the best  0.14ms perf
+Setting 20 num_threads that delivers the best overal perf/energy tradeoff 0.14ms perf.
+compared with 22 threads of the best 0.14ms perf, derivative (per-thread differential) is 0.02
+OpenMP (36 threads) elapsed time(ms):          335
+MFLOPS:        12518
+Solution Error: 0.00207517
+jacobi 512 512 0.0543 1e-10 1 5000
+------------------------------------------------------------------------------------------------------
+seq elapsed time(ms):            0
+MFLOPS:          inf
+Setting 22 num_threads that delivers the best  0.47ms perf
+Setting 20 num_threads that delivers the best overal perf/energy tradeoff 0.52ms perf.
+compared with 22 threads of the best 0.47ms perf, derivative (per-thread differential) is 0.04
+OpenMP (36 threads) elapsed time(ms):       1213.9
+MFLOPS:      13927.4
+Solution Error: 0.00103957
+jacobi 512 512 0.0543 1e-10 1 5000
+------------------------------------------------------------------------------------------------------
+seq elapsed time(ms):            0
+MFLOPS:          inf
+Setting 16 num_threads that delivers the best  0.63ms perf
+Setting 14 num_threads that delivers the best overal perf/energy tradeoff 0.71ms perf.
+compared with 16 threads of the best 0.63ms perf, derivative (per-thread differential) is 0.06
+OpenMP (36 threads) elapsed time(ms):       1606.5
+MFLOPS:      10523.8
+Solution Error: 0.00103957
+jacobi 512 512 0.0543 1e-10 1 5000
+------------------------------------------------------------------------------------------------------
+seq elapsed time(ms):            0
+MFLOPS:          inf
+Setting 20 num_threads that delivers the best  0.51ms perf
+Setting 18 num_threads that delivers the best overal perf/energy tradeoff 0.56ms perf.
+compared with 20 threads of the best 0.51ms perf, derivative (per-thread differential) is 0.05
+OpenMP (36 threads) elapsed time(ms):       1333.1
+MFLOPS:      12682.1
+Solution Error: 0.00103957
+jacobi 512 512 0.0543 1e-10 1 5000
+------------------------------------------------------------------------------------------------------
+seq elapsed time(ms):            0
+MFLOPS:          inf
+Setting 26 num_threads that delivers the best  0.42ms perf
+Setting 24 num_threads that delivers the best overal perf/energy tradeoff 0.44ms perf.
+compared with 26 threads of the best 0.42ms perf, derivative (per-thread differential) is 0.03
+OpenMP (36 threads) elapsed time(ms):       1036.3
+MFLOPS:      16314.3
+Solution Error: 0.00103957
+jacobi 512 512 0.0543 1e-10 1 5000
+------------------------------------------------------------------------------------------------------
+seq elapsed time(ms):            0
+MFLOPS:          inf
+Setting 22 num_threads that delivers the best  0.48ms perf
+Setting 16 num_threads that delivers the best overal perf/energy tradeoff 0.63ms perf.
+compared with 22 threads of the best 0.48ms perf, derivative (per-thread differential) is 0.05
+OpenMP (36 threads) elapsed time(ms):         1443
+MFLOPS:      11716.2
+Solution Error: 0.00103957
+jacobi 512 512 0.0543 1e-10 1 5000
+------------------------------------------------------------------------------------------------------
+seq elapsed time(ms):            0
+MFLOPS:          inf
+Setting 26 num_threads that delivers the best  0.41ms perf
+Setting 22 num_threads that delivers the best overal perf/energy tradeoff 0.47ms perf.
+compared with 26 threads of the best 0.41ms perf, derivative (per-thread differential) is 0.03
+OpenMP (36 threads) elapsed time(ms):       1115.4
+MFLOPS:      15157.3
+Solution Error: 0.00103957
+jacobi 512 512 0.0543 1e-10 1 5000
+------------------------------------------------------------------------------------------------------
+seq elapsed time(ms):            0
+MFLOPS:          inf
+Setting 34 num_threads that delivers the best  0.32ms perf
+Setting 32 num_threads that delivers the best overal perf/energy tradeoff 0.33ms perf.
+compared with 34 threads of the best 0.32ms perf, derivative (per-thread differential) is 0.01
+OpenMP (36 threads) elapsed time(ms):        771.2
+MFLOPS:      21922.3
+Solution Error: 0.00103957
+jacobi 512 512 0.0543 1e-10 1 5000
+------------------------------------------------------------------------------------------------------
+seq elapsed time(ms):            0
+MFLOPS:          inf
+Setting 30 num_threads that delivers the best  0.35ms perf
+Setting 26 num_threads that delivers the best overal perf/energy tradeoff 0.40ms perf.
+compared with 30 threads of the best 0.35ms perf, derivative (per-thread differential) is 0.04
+OpenMP (36 threads) elapsed time(ms):        958.4
+MFLOPS:      17640.3
+Solution Error: 0.00103957
+jacobi 512 512 0.0543 1e-10 1 5000
+------------------------------------------------------------------------------------------------------
+seq elapsed time(ms):            0
+MFLOPS:          inf
+Setting 20 num_threads that delivers the best  0.52ms perf
+Setting 18 num_threads that delivers the best overal perf/energy tradeoff 0.57ms perf.
+compared with 20 threads of the best 0.52ms perf, derivative (per-thread differential) is 0.05
+OpenMP (36 threads) elapsed time(ms):         1359
+MFLOPS:      12440.4
+Solution Error: 0.00103957
+jacobi 512 512 0.0543 1e-10 1 5000
+------------------------------------------------------------------------------------------------------
+seq elapsed time(ms):            0
+MFLOPS:          inf
+Setting 22 num_threads that delivers the best  0.48ms perf
+Setting 20 num_threads that delivers the best overal perf/energy tradeoff 0.51ms perf.
+compared with 22 threads of the best 0.48ms perf, derivative (per-thread differential) is 0.03
+OpenMP (36 threads) elapsed time(ms):       1216.9
+MFLOPS:      13893.1
+Solution Error: 0.00103957

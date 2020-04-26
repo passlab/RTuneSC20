@@ -1,0 +1,9 @@
+# check https://github.com/passlab/rtune/blob/master/rtune_lexgion_config_example.txt for
+# details about how to set the option in this file. 
+
+rtune_enabled = true
+rtune_initial_num_threads = 36 
+rtune_start_run = 1
+rtune_num_runs_per_tune = 1 
+min_num_threads = 2 
+rtune_log = true

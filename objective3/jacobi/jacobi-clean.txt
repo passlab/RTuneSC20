@@ -1,0 +1,504 @@
+jacobi 64 64 0.0543 1e-10 1 5000
+------------------------------------------------------------------------------------------------------
+seq elapsed time(ms):            0
+MFLOPS:          inf
+OpenMP (2 threads) elapsed time(ms):        149.7
+MFLOPS:      1669.07
+Solution Error: 0.00820414
+jacobi 64 64 0.0543 1e-10 1 5000
+------------------------------------------------------------------------------------------------------
+seq elapsed time(ms):            0
+MFLOPS:          inf
+OpenMP (4 threads) elapsed time(ms):           90
+MFLOPS:      2776.22
+Solution Error: 0.00820414
+jacobi 64 64 0.0543 1e-10 1 5000
+------------------------------------------------------------------------------------------------------
+seq elapsed time(ms):            0
+MFLOPS:          inf
+OpenMP (6 threads) elapsed time(ms):         78.7
+MFLOPS:      3174.84
+Solution Error: 0.00820414
+jacobi 64 64 0.0543 1e-10 1 5000
+------------------------------------------------------------------------------------------------------
+seq elapsed time(ms):            0
+MFLOPS:          inf
+OpenMP (8 threads) elapsed time(ms):           67
+MFLOPS:      3729.25
+Solution Error: 0.00820414
+jacobi 64 64 0.0543 1e-10 1 5000
+------------------------------------------------------------------------------------------------------
+seq elapsed time(ms):            0
+MFLOPS:          inf
+OpenMP (10 threads) elapsed time(ms):         65.4
+MFLOPS:      3820.49
+Solution Error: 0.00820414
+jacobi 64 64 0.0543 1e-10 1 5000
+------------------------------------------------------------------------------------------------------
+seq elapsed time(ms):            0
+MFLOPS:          inf
+OpenMP (12 threads) elapsed time(ms):         62.1
+MFLOPS:      4023.51
+Solution Error: 0.00820414
+jacobi 64 64 0.0543 1e-10 1 5000
+------------------------------------------------------------------------------------------------------
+seq elapsed time(ms):            0
+MFLOPS:          inf
+OpenMP (14 threads) elapsed time(ms):         59.6
+MFLOPS:      4192.28
+Solution Error: 0.00820414
+jacobi 64 64 0.0543 1e-10 1 5000
+------------------------------------------------------------------------------------------------------
+seq elapsed time(ms):            0
+MFLOPS:          inf
+OpenMP (16 threads) elapsed time(ms):         62.7
+MFLOPS:      3985.01
+Solution Error: 0.00820414
+jacobi 64 64 0.0543 1e-10 1 5000
+------------------------------------------------------------------------------------------------------
+seq elapsed time(ms):            0
+MFLOPS:          inf
+OpenMP (18 threads) elapsed time(ms):         63.3
+MFLOPS:      3947.24
+Solution Error: 0.00820414
+jacobi 64 64 0.0543 1e-10 1 5000
+------------------------------------------------------------------------------------------------------
+seq elapsed time(ms):            0
+MFLOPS:          inf
+OpenMP (20 threads) elapsed time(ms):         62.4
+MFLOPS:      4004.17
+Solution Error: 0.00820414
+jacobi 64 64 0.0543 1e-10 1 5000
+------------------------------------------------------------------------------------------------------
+seq elapsed time(ms):            0
+MFLOPS:          inf
+OpenMP (22 threads) elapsed time(ms):         61.1
+MFLOPS:      4089.36
+Solution Error: 0.00820414
+jacobi 64 64 0.0543 1e-10 1 5000
+------------------------------------------------------------------------------------------------------
+seq elapsed time(ms):            0
+MFLOPS:          inf
+OpenMP (24 threads) elapsed time(ms):         62.7
+MFLOPS:      3985.01
+Solution Error: 0.00820414
+jacobi 64 64 0.0543 1e-10 1 5000
+------------------------------------------------------------------------------------------------------
+seq elapsed time(ms):            0
+MFLOPS:          inf
+OpenMP (26 threads) elapsed time(ms):         63.1
+MFLOPS:      3959.75
+Solution Error: 0.00820414
+jacobi 64 64 0.0543 1e-10 1 5000
+------------------------------------------------------------------------------------------------------
+seq elapsed time(ms):            0
+MFLOPS:          inf
+OpenMP (28 threads) elapsed time(ms):         61.4
+MFLOPS:      4069.38
+Solution Error: 0.00820414
+jacobi 64 64 0.0543 1e-10 1 5000
+------------------------------------------------------------------------------------------------------
+seq elapsed time(ms):            0
+MFLOPS:          inf
+OpenMP (30 threads) elapsed time(ms):         59.9
+MFLOPS:      4171.29
+Solution Error: 0.00820414
+jacobi 64 64 0.0543 1e-10 1 5000
+------------------------------------------------------------------------------------------------------
+seq elapsed time(ms):            0
+MFLOPS:          inf
+OpenMP (32 threads) elapsed time(ms):         61.2
+MFLOPS:      4082.68
+Solution Error: 0.00820414
+jacobi 64 64 0.0543 1e-10 1 5000
+------------------------------------------------------------------------------------------------------
+seq elapsed time(ms):            0
+MFLOPS:          inf
+OpenMP (34 threads) elapsed time(ms):         79.8
+MFLOPS:      3131.08
+Solution Error: 0.00820414
+jacobi 64 64 0.0543 1e-10 1 5000
+------------------------------------------------------------------------------------------------------
+seq elapsed time(ms):            0
+MFLOPS:          inf
+OpenMP (36 threads) elapsed time(ms):         98.6
+MFLOPS:      2534.08
+Solution Error: 0.00820414
+jacobi 128 128 0.0543 1e-10 1 5000
+------------------------------------------------------------------------------------------------------
+seq elapsed time(ms):            0
+MFLOPS:          inf
+OpenMP (2 threads) elapsed time(ms):        556.7
+MFLOPS:      1853.67
+Solution Error: 0.00413419
+jacobi 128 128 0.0543 1e-10 1 5000
+------------------------------------------------------------------------------------------------------
+seq elapsed time(ms):            0
+MFLOPS:          inf
+OpenMP (4 threads) elapsed time(ms):        301.1
+MFLOPS:      3427.23
+Solution Error: 0.00413419
+jacobi 128 128 0.0543 1e-10 1 5000
+------------------------------------------------------------------------------------------------------
+seq elapsed time(ms):            0
+MFLOPS:          inf
+OpenMP (6 threads) elapsed time(ms):        221.6
+MFLOPS:      4656.77
+Solution Error: 0.00413419
+jacobi 128 128 0.0543 1e-10 1 5000
+------------------------------------------------------------------------------------------------------
+seq elapsed time(ms):            0
+MFLOPS:          inf
+OpenMP (8 threads) elapsed time(ms):        181.8
+MFLOPS:      5676.24
+Solution Error: 0.00413419
+jacobi 128 128 0.0543 1e-10 1 5000
+------------------------------------------------------------------------------------------------------
+seq elapsed time(ms):            0
+MFLOPS:          inf
+OpenMP (10 threads) elapsed time(ms):        160.6
+MFLOPS:      6425.53
+Solution Error: 0.00413419
+jacobi 128 128 0.0543 1e-10 1 5000
+------------------------------------------------------------------------------------------------------
+seq elapsed time(ms):            0
+MFLOPS:          inf
+OpenMP (12 threads) elapsed time(ms):          147
+MFLOPS:         7020
+Solution Error: 0.00413419
+jacobi 128 128 0.0543 1e-10 1 5000
+------------------------------------------------------------------------------------------------------
+seq elapsed time(ms):            0
+MFLOPS:          inf
+OpenMP (14 threads) elapsed time(ms):        135.2
+MFLOPS:      7632.69
+Solution Error: 0.00413419
+jacobi 128 128 0.0543 1e-10 1 5000
+------------------------------------------------------------------------------------------------------
+seq elapsed time(ms):            0
+MFLOPS:          inf
+OpenMP (16 threads) elapsed time(ms):          128
+MFLOPS:      8062.03
+Solution Error: 0.00413419
+jacobi 128 128 0.0543 1e-10 1 5000
+------------------------------------------------------------------------------------------------------
+seq elapsed time(ms):            0
+MFLOPS:          inf
+OpenMP (18 threads) elapsed time(ms):        124.4
+MFLOPS:      8295.34
+Solution Error: 0.00413419
+jacobi 128 128 0.0543 1e-10 1 5000
+------------------------------------------------------------------------------------------------------
+seq elapsed time(ms):            0
+MFLOPS:          inf
+OpenMP (20 threads) elapsed time(ms):        118.4
+MFLOPS:      8715.71
+Solution Error: 0.00413419
+jacobi 128 128 0.0543 1e-10 1 5000
+------------------------------------------------------------------------------------------------------
+seq elapsed time(ms):            0
+MFLOPS:          inf
+OpenMP (22 threads) elapsed time(ms):        116.4
+MFLOPS:      8865.46
+Solution Error: 0.00413419
+jacobi 128 128 0.0543 1e-10 1 5000
+------------------------------------------------------------------------------------------------------
+seq elapsed time(ms):            0
+MFLOPS:          inf
+OpenMP (24 threads) elapsed time(ms):        110.1
+MFLOPS:      9372.75
+Solution Error: 0.00413419
+jacobi 128 128 0.0543 1e-10 1 5000
+------------------------------------------------------------------------------------------------------
+seq elapsed time(ms):            0
+MFLOPS:          inf
+OpenMP (26 threads) elapsed time(ms):        101.3
+MFLOPS:        10187
+Solution Error: 0.00413419
+jacobi 128 128 0.0543 1e-10 1 5000
+------------------------------------------------------------------------------------------------------
+seq elapsed time(ms):            0
+MFLOPS:          inf
+OpenMP (28 threads) elapsed time(ms):        100.6
+MFLOPS:      10257.9
+Solution Error: 0.00413419
+jacobi 128 128 0.0543 1e-10 1 5000
+------------------------------------------------------------------------------------------------------
+seq elapsed time(ms):            0
+MFLOPS:          inf
+OpenMP (30 threads) elapsed time(ms):        102.9
+MFLOPS:      10028.6
+Solution Error: 0.00413419
+jacobi 128 128 0.0543 1e-10 1 5000
+------------------------------------------------------------------------------------------------------
+seq elapsed time(ms):            0
+MFLOPS:          inf
+OpenMP (32 threads) elapsed time(ms):        108.7
+MFLOPS:      9493.47
+Solution Error: 0.00413419
+jacobi 128 128 0.0543 1e-10 1 5000
+------------------------------------------------------------------------------------------------------
+seq elapsed time(ms):            0
+MFLOPS:          inf
+OpenMP (34 threads) elapsed time(ms):         93.9
+MFLOPS:      10989.8
+Solution Error: 0.00413419
+jacobi 128 128 0.0543 1e-10 1 5000
+------------------------------------------------------------------------------------------------------
+seq elapsed time(ms):            0
+MFLOPS:          inf
+OpenMP (36 threads) elapsed time(ms):          127
+MFLOPS:      8125.51
+Solution Error: 0.00413419
+jacobi 256 256 0.0543 1e-10 1 5000
+------------------------------------------------------------------------------------------------------
+seq elapsed time(ms):            0
+MFLOPS:          inf
+OpenMP (2 threads) elapsed time(ms):       2243.8
+MFLOPS:      1868.95
+Solution Error: 0.00207517
+jacobi 256 256 0.0543 1e-10 1 5000
+------------------------------------------------------------------------------------------------------
+seq elapsed time(ms):            0
+MFLOPS:          inf
+OpenMP (4 threads) elapsed time(ms):       1137.5
+MFLOPS:      3686.63
+Solution Error: 0.00207517
+jacobi 256 256 0.0543 1e-10 1 5000
+------------------------------------------------------------------------------------------------------
+seq elapsed time(ms):            0
+MFLOPS:          inf
+OpenMP (6 threads) elapsed time(ms):        819.7
+MFLOPS:      5115.94
+Solution Error: 0.00207517
+jacobi 256 256 0.0543 1e-10 1 5000
+------------------------------------------------------------------------------------------------------
+seq elapsed time(ms):            0
+MFLOPS:          inf
+OpenMP (8 threads) elapsed time(ms):        636.2
+MFLOPS:      6591.54
+Solution Error: 0.00207517
+jacobi 256 256 0.0543 1e-10 1 5000
+------------------------------------------------------------------------------------------------------
+seq elapsed time(ms):            0
+MFLOPS:          inf
+OpenMP (10 threads) elapsed time(ms):        544.3
+MFLOPS:      7704.46
+Solution Error: 0.00207517
+jacobi 256 256 0.0543 1e-10 1 5000
+------------------------------------------------------------------------------------------------------
+seq elapsed time(ms):            0
+MFLOPS:          inf
+OpenMP (12 threads) elapsed time(ms):          478
+MFLOPS:       8773.1
+Solution Error: 0.00207517
+jacobi 256 256 0.0543 1e-10 1 5000
+------------------------------------------------------------------------------------------------------
+seq elapsed time(ms):            0
+MFLOPS:          inf
+OpenMP (14 threads) elapsed time(ms):        438.9
+MFLOPS:      9554.66
+Solution Error: 0.00207517
+jacobi 256 256 0.0543 1e-10 1 5000
+------------------------------------------------------------------------------------------------------
+seq elapsed time(ms):            0
+MFLOPS:          inf
+OpenMP (16 threads) elapsed time(ms):        391.7
+MFLOPS:        10706
+Solution Error: 0.00207517
+jacobi 256 256 0.0543 1e-10 1 5000
+------------------------------------------------------------------------------------------------------
+seq elapsed time(ms):            0
+MFLOPS:          inf
+OpenMP (18 threads) elapsed time(ms):          377
+MFLOPS:      11123.4
+Solution Error: 0.00207517
+jacobi 256 256 0.0543 1e-10 1 5000
+------------------------------------------------------------------------------------------------------
+seq elapsed time(ms):            0
+MFLOPS:          inf
+OpenMP (20 threads) elapsed time(ms):        334.4
+MFLOPS:      12540.5
+Solution Error: 0.00207517
+jacobi 256 256 0.0543 1e-10 1 5000
+------------------------------------------------------------------------------------------------------
+seq elapsed time(ms):            0
+MFLOPS:          inf
+OpenMP (22 threads) elapsed time(ms):        316.9
+MFLOPS:        13233
+Solution Error: 0.00207517
+jacobi 256 256 0.0543 1e-10 1 5000
+------------------------------------------------------------------------------------------------------
+seq elapsed time(ms):            0
+MFLOPS:          inf
+OpenMP (24 threads) elapsed time(ms):        292.7
+MFLOPS:      14327.1
+Solution Error: 0.00207517
+jacobi 256 256 0.0543 1e-10 1 5000
+------------------------------------------------------------------------------------------------------
+seq elapsed time(ms):            0
+MFLOPS:          inf
+OpenMP (26 threads) elapsed time(ms):        276.3
+MFLOPS:      15177.5
+Solution Error: 0.00207517
+jacobi 256 256 0.0543 1e-10 1 5000
+------------------------------------------------------------------------------------------------------
+seq elapsed time(ms):            0
+MFLOPS:          inf
+OpenMP (28 threads) elapsed time(ms):        267.2
+MFLOPS:      15694.4
+Solution Error: 0.00207517
+jacobi 256 256 0.0543 1e-10 1 5000
+------------------------------------------------------------------------------------------------------
+seq elapsed time(ms):            0
+MFLOPS:          inf
+OpenMP (30 threads) elapsed time(ms):        264.5
+MFLOPS:      15854.6
+Solution Error: 0.00207517
+jacobi 256 256 0.0543 1e-10 1 5000
+------------------------------------------------------------------------------------------------------
+seq elapsed time(ms):            0
+MFLOPS:          inf
+OpenMP (32 threads) elapsed time(ms):        251.7
+MFLOPS:      16660.9
+Solution Error: 0.00207517
+jacobi 256 256 0.0543 1e-10 1 5000
+------------------------------------------------------------------------------------------------------
+seq elapsed time(ms):            0
+MFLOPS:          inf
+OpenMP (34 threads) elapsed time(ms):        239.7
+MFLOPS:        17495
+Solution Error: 0.00207517
+jacobi 256 256 0.0543 1e-10 1 5000
+------------------------------------------------------------------------------------------------------
+seq elapsed time(ms):            0
+MFLOPS:          inf
+OpenMP (36 threads) elapsed time(ms):        255.4
+MFLOPS:      16419.5
+Solution Error: 0.00207517
+jacobi 512 512 0.0543 1e-10 1 5000
+------------------------------------------------------------------------------------------------------
+seq elapsed time(ms):            0
+MFLOPS:          inf
+OpenMP (2 threads) elapsed time(ms):       8952.5
+MFLOPS:      1888.47
+Solution Error: 0.00103957
+jacobi 512 512 0.0543 1e-10 1 5000
+------------------------------------------------------------------------------------------------------
+seq elapsed time(ms):            0
+MFLOPS:          inf
+OpenMP (4 threads) elapsed time(ms):       4577.9
+MFLOPS:      3693.07
+Solution Error: 0.00103957
+jacobi 512 512 0.0543 1e-10 1 5000
+------------------------------------------------------------------------------------------------------
+seq elapsed time(ms):            0
+MFLOPS:          inf
+OpenMP (6 threads) elapsed time(ms):       3187.2
+MFLOPS:       5304.5
+Solution Error: 0.00103957
+jacobi 512 512 0.0543 1e-10 1 5000
+------------------------------------------------------------------------------------------------------
+seq elapsed time(ms):            0
+MFLOPS:          inf
+OpenMP (8 threads) elapsed time(ms):       2487.7
+MFLOPS:      6796.04
+Solution Error: 0.00103957
+jacobi 512 512 0.0543 1e-10 1 5000
+------------------------------------------------------------------------------------------------------
+seq elapsed time(ms):            0
+MFLOPS:          inf
+OpenMP (10 threads) elapsed time(ms):       2046.3
+MFLOPS:      8261.99
+Solution Error: 0.00103957
+jacobi 512 512 0.0543 1e-10 1 5000
+------------------------------------------------------------------------------------------------------
+seq elapsed time(ms):            0
+MFLOPS:          inf
+OpenMP (12 threads) elapsed time(ms):         1802
+MFLOPS:      9382.08
+Solution Error: 0.00103957
+jacobi 512 512 0.0543 1e-10 1 5000
+------------------------------------------------------------------------------------------------------
+seq elapsed time(ms):            0
+MFLOPS:          inf
+OpenMP (14 threads) elapsed time(ms):       1599.6
+MFLOPS:      10569.2
+Solution Error: 0.00103957
+jacobi 512 512 0.0543 1e-10 1 5000
+------------------------------------------------------------------------------------------------------
+seq elapsed time(ms):            0
+MFLOPS:          inf
+OpenMP (16 threads) elapsed time(ms):         1433
+MFLOPS:        11798
+Solution Error: 0.00103957
+jacobi 512 512 0.0543 1e-10 1 5000
+------------------------------------------------------------------------------------------------------
+seq elapsed time(ms):            0
+MFLOPS:          inf
+OpenMP (18 threads) elapsed time(ms):       1336.9
+MFLOPS:        12646
+Solution Error: 0.00103957
+jacobi 512 512 0.0543 1e-10 1 5000
+------------------------------------------------------------------------------------------------------
+seq elapsed time(ms):            0
+MFLOPS:          inf
+OpenMP (20 threads) elapsed time(ms):       1216.9
+MFLOPS:      13893.1
+Solution Error: 0.00103957
+jacobi 512 512 0.0543 1e-10 1 5000
+------------------------------------------------------------------------------------------------------
+seq elapsed time(ms):            0
+MFLOPS:          inf
+OpenMP (22 threads) elapsed time(ms):       1114.4
+MFLOPS:      15170.9
+Solution Error: 0.00103957
+jacobi 512 512 0.0543 1e-10 1 5000
+------------------------------------------------------------------------------------------------------
+seq elapsed time(ms):            0
+MFLOPS:          inf
+OpenMP (24 threads) elapsed time(ms):       1033.1
+MFLOPS:      16364.8
+Solution Error: 0.00103957
+jacobi 512 512 0.0543 1e-10 1 5000
+------------------------------------------------------------------------------------------------------
+seq elapsed time(ms):            0
+MFLOPS:          inf
+OpenMP (26 threads) elapsed time(ms):          947
+MFLOPS:      17852.7
+Solution Error: 0.00103957
+jacobi 512 512 0.0543 1e-10 1 5000
+------------------------------------------------------------------------------------------------------
+seq elapsed time(ms):            0
+MFLOPS:          inf
+OpenMP (28 threads) elapsed time(ms):        897.4
+MFLOPS:      18839.4
+Solution Error: 0.00103957
+jacobi 512 512 0.0543 1e-10 1 5000
+------------------------------------------------------------------------------------------------------
+seq elapsed time(ms):            0
+MFLOPS:          inf
+OpenMP (30 threads) elapsed time(ms):        813.5
+MFLOPS:      20782.4
+Solution Error: 0.00103957
+jacobi 512 512 0.0543 1e-10 1 5000
+------------------------------------------------------------------------------------------------------
+seq elapsed time(ms):            0
+MFLOPS:          inf
+OpenMP (32 threads) elapsed time(ms):        768.1
+MFLOPS:      22010.8
+Solution Error: 0.00103957
+jacobi 512 512 0.0543 1e-10 1 5000
+------------------------------------------------------------------------------------------------------
+seq elapsed time(ms):            0
+MFLOPS:          inf
+OpenMP (34 threads) elapsed time(ms):        792.6
+MFLOPS:      21330.4
+Solution Error: 0.00103957
+jacobi 512 512 0.0543 1e-10 1 5000
+------------------------------------------------------------------------------------------------------
+seq elapsed time(ms):            0
+MFLOPS:          inf
+OpenMP (36 threads) elapsed time(ms):        770.4
+MFLOPS:      21945.1
+Solution Error: 0.00103957
