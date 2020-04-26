@@ -5,30 +5,27 @@ The results of the experiment presented in the paper were performed using two ma
 ## Steps:
 1. clone the repository and go to the repository from a Linux terminal
 
-```
-git clone https://github.com/passlab/RTuneSC20
-cd RTuneSC20
-```
+    ```
+    git clone https://github.com/passlab/RTuneSC20
+    cd RTuneSC20
+    ```
 
 ### Objective 1: 
 
 1. change to `objective1/LULESH` folder
 
-```
-cd objective1/LULESH
-
-
-```
-
+    ```
+    cd objective1/LULESH
+    
+    ```
 
 ### Objective 2:
 
 1. change to `objective2/jacobi` folder
-```
-cd objective2/jacobi
-
-
-```
+    ```
+    cd objective2/jacobi
+    
+    ```
 
 ### Objective 3: 
 
