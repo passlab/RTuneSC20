@@ -51,7 +51,7 @@ and MPI library (MPICH, OpenMPI, etc) should be sufficient to run the program.
     make -f Makefile-rtune 
     make -f Makefile-clean
     ```
-1. execute the `batch_run.sh` script to generate the results for LULESH shown in the paper
+1. execute the `clean_batch_run.sh` and `rtune_batch_run.sh` scripts to generate the results for LULESH shown in the paper
 
     ```
     ./batch_run.sh
