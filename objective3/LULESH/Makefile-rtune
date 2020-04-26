@@ -1,8 +1,6 @@
 #default build suggestion of MPI + OPENMP with gcc on Livermore machines you might have to change the compiler name
 
-RTUNE_INSTALL=../../../rtune-install
-OMP_H_PATH=/opt/llvm/llvm-9.0.0-install/lib/clang/9.0.0/include
-OMP_LIB_PATH=/opt/llvm/llvm-9.0.0-install/lib
+RTUNE_INSTALL=../rtune-install
 
 SHELL = /bin/sh
 .SUFFIXES: .cc .o
@@ -14,6 +12,7 @@ MPI_LIB = /opt/local/lib
 
 SERCXX = g++ -DUSE_MPI=0
 MPICXX = OMPI_CXX=clang++ mpic++ -DUSE_MPI=1
+CXX = ${MPICXX}
 CXX = clang++ -DUSE_MPI=0
 
 SOURCES2.0 = \
