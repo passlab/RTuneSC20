@@ -144,7 +144,7 @@ Domain::Domain(Int_t numRanks, Index_t colLoc,
    // using the -i flag in 2.x
 
    dtfixed() = Real_t(-1.0e-6) ; // Negative means use courant condition
-   stoptime()  = Real_t(1.0e-2); // *Real_t(edgeElems*tp/45.0) ;
+   stoptime()  = Real_t(9999.0); // *Real_t(edgeElems*tp/45.0) ;
 
    // Initial conditions
    deltatimemultlb() = Real_t(1.1) ;
