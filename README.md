@@ -19,7 +19,20 @@ and MPI library (MPICH, OpenMPI, etc) should be sufficient to run the program.
 
     ```
     cd objective1/LULESH
-    
+    mkdir build
+    ```
+
+2. change to `build` folder, build executable `lulesh2.0`
+    ```
+    cd build
+    cmake -DCMAKE_BUILD_TYPE=Release -DMPI_CXX_COMPILER=`which mpicxx` ..
+    make
+    ```
+3. change to `objective1/LULESH` folder, run the .sh scripts to get the results shown in the paper
+    ```
+    ./lulesh2_0_cutoff_cfg_batch_run.sh
+    ./lulesh2_0_MPI_cfg_8_1_batch_run.sh
+    ...
     ```
 
 ### Objective 2:
