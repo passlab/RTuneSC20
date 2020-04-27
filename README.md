@@ -42,6 +42,18 @@ and MPI library (MPICH, OpenMPI, etc) should be sufficient to run the program.
     cd objective2/jacobi
     
     ```
+2. build the MPI executable `jacobi_mpi`
+    ```
+    make mpi
+    ````
+3. run the produced executable with different arguments on clusters
+    ```
+    # run with the RTune threshold 0.0002 and defualt error tolerance 1.0*10-9.
+    mpirun -N2 -n8 ./jacobi_mpi 1024 1024 0.0002
+    # run with the RTune threshold 0.0005 and error tolerance 4.0*10-9
+    mpirun -N2 -n8 ./jacobi_mpi 1024 1024 0.0005 0.000000004
+    ...
+    ```
 
 ### Objective 3: 
 
