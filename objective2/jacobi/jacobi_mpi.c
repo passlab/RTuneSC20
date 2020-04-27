@@ -8,8 +8,8 @@
 
 
 /* compile and run the program using the following command
- *    mpicc jacobi.c -lm -o jacobi
- *    mpirun -np 4 ./jacobi
+ *    mpicc jacobi_mpi.c -lm -o jacobi_mpi
+ *    mpirun -np 4 ./jacobi_mpi
  */
 
 /* read timer in second */
@@ -441,7 +441,7 @@ void jacobi_mpi(long n, long m, REAL dx, REAL dy, REAL alpha, REAL omega, REAL *
     REAL k2[2];
     k2[1] = 0.0;
     int side_walk = 0;
-    REAL k3_limit = 0.0005;
+    REAL k2_limit = 0.0005;
     REAL errors[100];
     REAL fit_result[2];
     int start_index = 0;
@@ -554,22 +554,21 @@ void jacobi_mpi(long n, long m, REAL dx, REAL dy, REAL alpha, REAL omega, REAL *
                 }
                 else {
                     if (myrank == 0) {
-                        printf("Stop early. Third derivative: %.15lg\n", (k2[0] - k2[1])/k2[0]);
-                        printf("Saved iterations based on mits: %ld out of %d\n", mits-k, mits);
-                        //printf("Saved iterations based on error: %0.0f\n", -(error-tol)/k1[1]);
-                        //printf("Saved iterations based on second derivative: %0.0f\n", k2[1]/(k2[0]-k2[1]));
                         tuning_time += read_timer_ms() - tuning_time_start;
                         fit(errors, start_index, k, amount, fit_result);
                         REAL a = fit_result[0];
                         REAL b = fit_result[1];
                         REAL predict_finishing_iteration = (log10(tol) - b)/a;
+                        printf("Saved iterations based on mits: %ld out of %d\n", mits-k, mits);
                         printf("Fitting curve is: y = %lg * x + %lg, targeted y = %lg\n", a, b, log10(tol));
                         printf("Predicted finishing iteration is: %ld\n", (long int)predict_finishing_iteration);
+                        printf("Saved iterations based on prediction: %ld out of %ld\n", (long int)predict_finishing_iteration-k, (long int)predict_finishing_iteration);
 
                     }
                     break;
                 }
             };
+            // Reset the side_walk counter every 200 iterations
             if (k%200 == 0) {
                 side_walk = 0;
             };
