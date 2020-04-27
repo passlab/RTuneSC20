@@ -60,7 +60,7 @@ void fit(REAL* errors, int start_index, int start_iter, int amount, REAL* result
     iterations = malloc(amount * sizeof(long int));
     for(i = 0; i <= amount; i++) {
         log_errors[i] = log10(errors[(start_index + i)%100]);
-        iterations[i] = start_iter + 5 * i;
+        iterations[i] = start_iter - 5 * (amount - i);
         printf("Data %d: iter: %ld, error: %lg, log_error: %lg\n", i, iterations[i], errors[(start_index + i)%100], log_errors[i]);
     }
     for(i = 0; i <= amount-1; i++) {
@@ -69,8 +69,8 @@ void fit(REAL* errors, int start_index, int start_iter, int amount, REAL* result
         sumy = sumy + log_errors[i];
         sumxy = sumxy + iterations[i] * log_errors[i];
     }
-    b = ((sumx2 * sumy - sumx*sumxy) * 1.0 / (amount * sumx2-sumx * sumx) * 1.0);
-    a = ((amount * sumxy - sumx*sumy) * 1.0 /(amount * sumx2-sumx * sumx) * 1.0);
+    b = ((sumx2 * sumy - sumx * sumxy) * 1.0 / (amount * sumx2-sumx * sumx) * 1.0);
+    a = ((amount * sumxy - sumx * sumy) * 1.0 / (amount * sumx2-sumx * sumx) * 1.0);
     result[0] = a;
     result[1] = b;
 }
@@ -104,7 +104,7 @@ void initialize(long n, long m, REAL alpha, REAL dx, REAL dy, REAL * u_p, REAL *
     
     //double PI=3.1415926;
     /* Initialize initial condition and RHS */
-    //#pragma omp parallel for private(xx,yy,j,i)
+    #pragma omp parallel for private(xx,yy,j,i)
     for (i = 0; i < n; i++)
         for (j = 0; j < m; j++) {
             xx = ((int) (-1.0 + (dx * (i - 1))));
@@ -132,7 +132,7 @@ double error_check(long n, long m, REAL alpha, REAL dx, REAL dy, REAL * u_p, REA
     error = 0.0;
     REAL (*u)[m] = (REAL(*)[m])u_p;
     REAL (*f)[m] = (REAL(*)[m])f_p;
-    //#pragma omp parallel for private(xx,yy,temp,j,i) reduction(+:error)
+    #pragma omp parallel for private(xx,yy,temp,j,i) reduction(+:error)
     for (i = 0; i < n; i++)
         for (j = 0; j < m; j++) {
             xx = (-1.0 + (dx * (i - 1)));
@@ -144,7 +144,7 @@ double error_check(long n, long m, REAL alpha, REAL dx, REAL dy, REAL * u_p, REA
     return error;
 }
 void jacobi_seq(long n, long m, REAL dx, REAL dy, REAL alpha, REAL relax, REAL * u_p, REAL * f_p, REAL tol, int mits);
-void jacobi_mpi(long n, long m, REAL dx, REAL dy, REAL alpha, REAL relax, REAL * u_p, REAL * f_p, REAL tol, int mits);
+void jacobi_mpi(long n, long m, REAL dx, REAL dy, REAL alpha, REAL relax, REAL * u_p, REAL * f_p, REAL tol, int mits, REAL rtune_threshold);
 int numprocs;
 int myrank;
 
@@ -155,26 +155,27 @@ int main(int argc, char * argv[]) {
     REAL tol = 0.000000001;
     REAL relax = 1.0;
     int mits = 50000;
+    REAL rtune_threshold = 0.0002;
     
     MPI_Init(&argc, &argv);
     MPI_Comm_size(MPI_COMM_WORLD, &numprocs);
     MPI_Comm_rank(MPI_COMM_WORLD, &myrank);
 
     if (myrank == 0) {
-    fprintf(stderr,"Usage: jacobi [<n> <m> <alpha> <tol> <relax> <mits>]\n");
+    fprintf(stderr,"Usage: jacobi [<n> <m> <rtune> <tol> <relax> <mits>]\n");
     fprintf(stderr, "\tn - grid dimension in x direction, default: %ld\n", n);
     fprintf(stderr, "\tm - grid dimension in y direction, default: n if provided or %ld\n", m);
-    fprintf(stderr, "\talpha - Helmholtz constant (always greater than 0.0), default: %g\n", alpha);
+    fprintf(stderr, "\trtune - threshold for RTune to terminate the computing (always greater than 0.0), default: %g\n", rtune_threshold);
     fprintf(stderr, "\ttol   - error tolerance for iterative solver, default: %g\n", tol);
     fprintf(stderr, "\trelax - Successice over relaxation parameter, default: %g\n", relax);
     fprintf(stderr, "\tmits  - Maximum iterations for iterative solver, default: %d\n", mits);
     }
     if (argc == 2)      { sscanf(argv[1], "%ld", &n); m = n; }
     else if (argc == 3) { sscanf(argv[1], "%ld", &n); sscanf(argv[2], "%ld", &m); }
-    else if (argc == 4) { sscanf(argv[1], "%ld", &n); sscanf(argv[2], "%ld", &m); sscanf(argv[3], "%g", &alpha); }
-    else if (argc == 5) { sscanf(argv[1], "%ld", &n); sscanf(argv[2], "%ld", &m); sscanf(argv[3], "%g", &alpha); sscanf(argv[4], "%g", &tol); }
-    else if (argc == 6) { sscanf(argv[1], "%ld", &n); sscanf(argv[2], "%ld", &m); sscanf(argv[3], "%g", &alpha); sscanf(argv[4], "%g", &tol); sscanf(argv[5], "%g", &relax); }
-    else if (argc == 7) { sscanf(argv[1], "%ld", &n); sscanf(argv[2], "%ld", &m); sscanf(argv[3], "%g", &alpha); sscanf(argv[4], "%g", &tol); sscanf(argv[5], "%g", &relax); sscanf(argv[6], "%d", &mits); }
+    else if (argc == 4) { sscanf(argv[1], "%ld", &n); sscanf(argv[2], "%ld", &m); rtune_threshold = atof(argv[3]); /*sscanf(argv[3], "%g", &rtune_threshold);*/ }
+    else if (argc == 5) { sscanf(argv[1], "%ld", &n); sscanf(argv[2], "%ld", &m); sscanf(argv[3], "%g", &rtune_threshold); sscanf(argv[4], "%g", &tol); }
+    else if (argc == 6) { sscanf(argv[1], "%ld", &n); sscanf(argv[2], "%ld", &m); sscanf(argv[3], "%g", &rtune_threshold); sscanf(argv[4], "%g", &tol); sscanf(argv[5], "%g", &relax); }
+    else if (argc == 7) { sscanf(argv[1], "%ld", &n); sscanf(argv[2], "%ld", &m); sscanf(argv[3], "%g", &rtune_threshold); sscanf(argv[4], "%g", &tol); sscanf(argv[5], "%g", &relax); sscanf(argv[6], "%d", &mits); }
     else {
         /* the rest of arg ignored */
     }
@@ -190,7 +191,7 @@ int main(int argc, char * argv[]) {
     double elapsed_seq, elapsed_mpi;
     
     if (myrank == 0) {
-        printf("jacobi %ld %ld %g %g %g %d\n", n, m, alpha, tol, relax, mits);
+        printf("jacobi %ld %ld %g %g %g %d\n", n, m, rtune_threshold, tol, relax, mits);
         printf("------------------------------------------------------------------------------------------------------\n");
         /** init the array */
         
@@ -271,7 +272,7 @@ int main(int argc, char * argv[]) {
      */
     REAL error = 0;
      
-    jacobi_mpi(n, m, dx, dy, alpha, relax, umpi, fmpi, tol, mits);
+    jacobi_mpi(n, m, dx, dy, alpha, relax, umpi, fmpi, tol, mits, rtune_threshold);
     //if (myrank == 0) {
       //  jacobi_seq(n, m, dx, dy, alpha, relax, u, f, tol, mits);
     //} 
@@ -402,7 +403,7 @@ void jacobi_seq(long n, long m, REAL dx, REAL dy, REAL alpha, REAL omega, REAL *
  * Since this function is called by each process who computes u subarray(the portion of u array distributed from process 0),
  * u_p and f_p is actually the pointer of the subarray, and n and m are for the size of the subarray.
  */
-void jacobi_mpi(long n, long m, REAL dx, REAL dy, REAL alpha, REAL omega, REAL * u_p, REAL * f_p, REAL tol, int mits) {
+void jacobi_mpi(long n, long m, REAL dx, REAL dy, REAL alpha, REAL omega, REAL * u_p, REAL * f_p, REAL tol, int mits, REAL rtune_threshold) {
     long i, j, k;
     REAL error, local_error;
     REAL ax;
@@ -441,7 +442,7 @@ void jacobi_mpi(long n, long m, REAL dx, REAL dy, REAL alpha, REAL omega, REAL *
     REAL k2[2];
     k2[1] = 0.0;
     int side_walk = 0;
-    REAL k2_limit = 0.0005;
+    REAL k2_limit = rtune_threshold;
     REAL errors[100];
     REAL fit_result[2];
     int start_index = 0;
@@ -548,7 +549,7 @@ void jacobi_mpi(long n, long m, REAL dx, REAL dy, REAL alpha, REAL omega, REAL *
             start_index = amount%100;
             errors[start_index] = error;
             amount += 1;
-            if (k2[1] > 0 && fabs(k2[0] - k2[1])/k2[0] < k3_limit) {
+            if (k2[1] > 0 && fabs((k1[0] - k1[1])/k1[0]) < k2_limit) {
                 if (side_walk < 15) {
                     side_walk += 1;
                 }
@@ -562,7 +563,7 @@ void jacobi_mpi(long n, long m, REAL dx, REAL dy, REAL alpha, REAL omega, REAL *
                         printf("Saved iterations based on mits: %ld out of %d\n", mits-k, mits);
                         printf("Fitting curve is: y = %lg * x + %lg, targeted y = %lg\n", a, b, log10(tol));
                         printf("Predicted finishing iteration is: %ld\n", (long int)predict_finishing_iteration);
-                        printf("Saved iterations based on prediction: %ld out of %ld\n", (long int)predict_finishing_iteration-k, (long int)predict_finishing_iteration);
+                        printf("Saved iterations based on error tolerance: %ld out of %ld\n", (long int)predict_finishing_iteration-k, (long int)predict_finishing_iteration);
 
                     }
                     break;
