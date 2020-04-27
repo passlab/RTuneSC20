@@ -2697,6 +2697,7 @@ int main(int argc, char *argv[])
    opts.viz = 0;
    opts.balance = 1;
    opts.cost = 1;
+   opts.cutoff = 250000;
 
    ParseCommandLineOptions(argc, argv, myRank, &opts);
 
@@ -2754,7 +2755,7 @@ int main(int argc, char *argv[])
    int q_flag = 0; // non-tuning flag
    int r_flag = 0; // printf flag
 
-   float cut_off = 30.0; /* prepared for termination */
+   float cut_off = opts.cutoff/10000.0; /* prepared for termination */
    float cnt_v_max = 9999.0; /* check peak value */ 
    int is_bound = -1; /* check if boundary is reached */ 
    
@@ -2823,7 +2824,7 @@ int main(int argc, char *argv[])
       post_slop = post_velocity - pre_velocity;
 
       if (pre_slop > 0 && post_slop < 0 && (locDom->rowLoc()+locDom->planeLoc() == 0) && (globalIdx < dim_size*locDom->sizeX())) {
-	  if (cut_off == 0.0) { cut_off = 0.001 * locDom->xd(globalIdx); if (cut_off <= 25.0) cut_off = 25.0; } //this should be the peak of all peak value
+	  if (cut_off < 1.0) { cut_off = cut_off * locDom->xd(globalIdx); } /* if (cut_off <= 25.0) cut_off = 25.0; } //this should be the peak of all peak value */
 	  cnt_v_max = locDom->xd(locIdx);
 	  if (myRank == work_rank) printf("rank = %d, cnt_vmax = %f, switched to node %d, bound: %d, work_rank: %d, locIdx: %d\n", myRank, cnt_v_max, globalIdx+1, is_bound, work_rank, locIdx);
 	  globalIdx++;

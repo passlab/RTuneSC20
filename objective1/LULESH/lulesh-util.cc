@@ -160,6 +160,17 @@ void ParseCommandLineOptions(int argc, char *argv[],
             exit(0);
 #endif
          }
+	 /* -t */
+	 else if (strcmp(argv[i], "-t") == 0) {
+            if (i+1 >= argc) {
+               ParseError("Missing integer argument to -t", myRank);
+            }
+            ok = StrToInt(argv[i+1], &(opts->cutoff));
+            if(!ok) {
+               ParseError("Parse Error on option -t integer value required after argument\n", myRank);
+            }
+            i+=2;
+	 }
          else {
             char msg[80];
             PrintCommandLineOptions(argv[0], myRank);
