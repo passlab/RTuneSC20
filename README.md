@@ -9,8 +9,8 @@ and MPI library (MPICH, OpenMPI, etc) should be sufficient to run the program.
 1. clone the repository and go to the repository from a Linux terminal
 
     ```
-    git clone https://github.com/passlab/RTuneSC20
-    cd RTuneSC20
+    git clone https://github.com/passlab/RTuneSC21
+    cd RTuneSC21
     ```
 
 ### Use case 1: 
