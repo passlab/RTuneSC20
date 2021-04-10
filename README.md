@@ -15,10 +15,10 @@ and MPI library (MPICH, OpenMPI, etc) should be sufficient to run the program.
 
 ### Use case 1: 
 
-1. change to `objective1/LULESH` folder
+1. change to `usecase1/LULESH` folder
 
     ```
-    cd objective1/LULESH
+    cd usecase1/LULESH
     mkdir build
     ```
 
@@ -28,7 +28,7 @@ and MPI library (MPICH, OpenMPI, etc) should be sufficient to run the program.
     cmake -DCMAKE_BUILD_TYPE=Release -DMPI_CXX_COMPILER=`which mpicxx` ..
     make
     ```
-3. change to `objective1/LULESH` folder, run the .sh scripts to get the results shown in the paper
+3. change to `usecase1/LULESH` folder, run the .sh scripts to get the results shown in the paper
     ```
     ./lulesh2_0_cutoff_cfg_batch_run.sh
     ./lulesh2_0_MPI_cfg_8_1_batch_run.sh
@@ -37,9 +37,9 @@ and MPI library (MPICH, OpenMPI, etc) should be sufficient to run the program.
 
 ### Use case 2:
 
-1. change to `objective2/jacobi` folder
+1. change to `usecase2/jacobi` folder
     ```
-    cd objective2/jacobi
+    cd usecase2/jacobi
     
     ```
 2. build the MPI executable `jacobi_mpi`
@@ -57,9 +57,9 @@ and MPI library (MPICH, OpenMPI, etc) should be sufficient to run the program.
 
 ### Use case 3: 
 
-1. change to `objective3` folder and create build and install folder for rtune library
+1. change to `usecase3` folder and create build and install folder for rtune library
     ```
-    cd objective3
+    cd usecase3
     mkdir rtune-build rtune-install
     ```
 1. change to `rtune-build` folder, build rtune library and install the library in the `rtune-install` folder
@@ -70,7 +70,7 @@ and MPI library (MPICH, OpenMPI, etc) should be sufficient to run the program.
     make install
 
     ```
-1. change to `objective3/LULESH` folder, and create both the clean LULESH binary (`lulesh2.0-clean`) and RTune-optimized LULESH binary (`lulesh2.0-rtune`)
+1. change to `usecase3/LULESH` folder, and create both the clean LULESH binary (`lulesh2.0-clean`) and RTune-optimized LULESH binary (`lulesh2.0-rtune`)
 
     ```
     make -f Makefile-rtune 
@@ -81,7 +81,7 @@ and MPI library (MPICH, OpenMPI, etc) should be sufficient to run the program.
     ```
     ./batch_run.sh
     ```
-1. change to `objective3/jacobi` folder, and create both the clean jacobi binary (`jacobi-clean`) and RTune-optimized jacobi binary (`jacobi-rtune`)
+1. change to `usecase3/jacobi` folder, and create both the clean jacobi binary (`jacobi-clean`) and RTune-optimized jacobi binary (`jacobi-rtune`)
     ```
     make
     ```
