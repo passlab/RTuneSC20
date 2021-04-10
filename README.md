@@ -13,7 +13,7 @@ and MPI library (MPICH, OpenMPI, etc) should be sufficient to run the program.
     cd RTuneSC20
     ```
 
-### Objective 1: 
+### Use case 1: 
 
 1. change to `objective1/LULESH` folder
 
@@ -35,7 +35,7 @@ and MPI library (MPICH, OpenMPI, etc) should be sufficient to run the program.
     ...
     ```
 
-### Objective 2:
+### Use case 2:
 
 1. change to `objective2/jacobi` folder
     ```
@@ -55,7 +55,7 @@ and MPI library (MPICH, OpenMPI, etc) should be sufficient to run the program.
     ...
     ```
 
-### Objective 3: 
+### Use case 3: 
 
 1. change to `objective3` folder and create build and install folder for rtune library
     ```
@@ -91,3 +91,4 @@ and MPI library (MPICH, OpenMPI, etc) should be sufficient to run the program.
     ./rtune_batch_run.sh
     ```
     
+### Use case 4:
