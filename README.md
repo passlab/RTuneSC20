@@ -92,3 +92,26 @@ and MPI library (MPICH, OpenMPI, etc) should be sufficient to run the program.
     ```
     
 ### Use case 4:
+
+1. change to `usecase4/2Dstencil` folder
+    ```
+    cd usecase4/2Dstencil
+    
+    ```
+1. build the executable `stencil_online.out`
+    ```
+    make
+    ````
+1. run the produced executable with predefined maximum problem size
+    ```
+    # run with maximum problem size 128.
+    ./stencil_online.out 128
+    # # run with maximum problem size 512.
+    ./stencil_online.out 512
+    ...
+    ```
+1. run the produced executable using the testing script
+    ```
+    # test the maximum problem size from 32 to 512, and save the results in a csv file
+    ./test_random_size.sh
+    ```
