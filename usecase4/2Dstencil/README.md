@@ -1,20 +1,16 @@
-# homp-metadirective
-Implementing metadirective extension using HOMP 
 
-# Using `metadirective` to guide the computing of 2D stencil kernel
+# Automatically select CPU or GPU based on the problem size of each iteration of AMR (2D stencil kernel)
 
 ## Prerequisite
 
-- NVIDIA GPU with CUDA toolkit 10.1
-- Clang/LLVM 10.x with omp target offloading support
+- NVIDIA GPU with CUDA toolkit 10.1 or later
+- Clang/LLVM 10.x or later with omp target offloading support
 
 ## Files
 
 List
-* self-contained all-in-one version:  stencil_metadirective_online.c
-* separated adapative code and runtime support files
-  * stencil_metadirective_main.c 
-  * stencil_metadirective_models.c
+* self-contained all-in-one version:  `stencil_metadirective_online.c`
+* Testing script: `test_random_size.sh`
 
 the main function will run a stencil kernel 5000 times with randomized stencil sizes. 
 * first 20+20 iterations will be used to profile CPU and GPU executions
@@ -28,8 +24,6 @@ the main function will run a stencil kernel 5000 times with randomized stencil s
 ```    
 
 41 iterations and after will use the trained models to guide the device selection. 
-
-* compiler-translation: prototype of refined compiler translation
  
 
 ## Build
@@ -54,9 +48,6 @@ The max problem size and five execution times are printed to `stdout`.
 # ./stencil_online.out <problem_size>
 ./stencil_online.out 512
 
-Or if you use Livermore Computing's Lassen supercomputer
-* bsub ./stencil_online.out 512
-
 Qilin CPU: y = 0.0787223 * x + -15.5737
 Log Linear Regression CPU: y = 22.5622 * ln(x) + -89.711
 Log-Log Linear Regression CPU: log(y) = 3.04608 * log(x) + -22.3711
@@ -71,10 +62,6 @@ Log-Log Linear Regression total time (ms): 3604
 512, 18777, 3262, 4436, 3514, 3604
 
 ```
-
-Anjia's experiment data
-
-https://docs.google.com/spreadsheets/d/18fq2KkIPx-kAIIrWIKFwsEo6XXFwXtg-g0CDeTmJ00g/edit#gid=1568124873 
 
 
 ## Test
