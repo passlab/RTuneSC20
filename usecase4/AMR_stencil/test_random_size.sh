@@ -2,7 +2,7 @@
 
 if [ -z "$1" ]
 then
-    FILENAME_PREFIX="online"
+    FILENAME_PREFIX="rtune"
 else
     FILENAME_PREFIX=$1
 fi
@@ -30,15 +30,15 @@ fi
 
 if [ -z "$5" ]
 then
-    EXECUTABLE_POSTFIX="online"
+    EXECUTABLE_POSTFIX="rtune"
 else
     EXECUTABLE_POSTFIX=$5
 fi
 
-echo "Max Problem Size, CPU, GPU, Qilin, Log Linear Regression, Log-Log Linear Regression" > ${FILENAME_PREFIX}_random.csv
+echo "Max Problem Size, CPU, GPU, Linear Regression" > ${FILENAME_PREFIX}_random.csv
 
 for (( i = ${START_SIZE}; i <= ${END_SIZE}; i += ${STEP} ))
   do 
     echo $i
-    ./stencil_${EXECUTABLE_POSTFIX}.out $i >> ${FILENAME_PREFIX}_random.csv
+    ./amr_stencil_${EXECUTABLE_POSTFIX}.out $i 2 >> ${FILENAME_PREFIX}_random.csv
  done
