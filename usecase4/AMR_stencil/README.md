@@ -41,13 +41,13 @@ For the rest iterations, random problem size is generated for each iteration bec
 
 The range of probelm size is from 1 to the given max problem size.
 
-The program prints the generated model functions and the total execution time of CPU, GPU, and three models to `stderr`.
-The max problem size and five execution times are printed to `stdout`.
+The program prints the generated model functions and the total execution time of CPU, GPU, and linear regression model to `stderr`.
+The max problem size and three execution times are printed to `stdout`.
 
 Three modes can be selected:
 1. Default mode: the AMR application runs with RTune to obtain the best performance;
 2. Overhead mearsuring mode: the AMR application runs with RTune. The total time cost and overhead are measured;
-3. Evaluation mode: besides running with RTune, the AMR application also runs on purely CPU or GPU. The exectuion time of three versions will be print.
+3. Evaluation mode: besides running with RTune, the AMR application also runs on purely CPU or GPU. The exectuion time of three versions will be printed.
 
 ```bash
 # ./amr_stencil_rtune.out <problem_size> <execution_mode>
