@@ -4,7 +4,7 @@
 ## Prerequisite
 
 - OpenMPI 4.0
-- Clang/LLVM 10.x or later
+- Clang/LLVM 10.x or later with OpenMP support
 
 ## Files
 
