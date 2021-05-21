@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <string.h>
 #include <math.h>
-#include <sys/timeb.h>
+#include <sys/time.h>
 #include <mpi.h>
 #define REAL double
 
@@ -14,16 +14,16 @@
 
 /* read timer in second */
 double read_timer() {
-    struct timeb tm;
-    ftime(&tm);
-    return (double) tm.time + (double) tm.millitm / 1000.0;
+    struct timeval timer;
+    gettimeofday(&timer, NULL);
+    return (double)timer.tv_sec + (double)timer.tv_usec / 1000000.0;
 }
 
 /* read timer in ms */
 double read_timer_ms() {
-    struct timeb tm;
-    ftime(&tm);
-    return (double) tm.time * 1000.0 + (double) tm.millitm;
+    struct timeval timer;
+    gettimeofday(&timer, NULL);
+    return (double)timer.tv_sec * 1000.0 + (double)timer.tv_usec / 1000.0;
 }
 
 /************************************************************

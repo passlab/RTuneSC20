@@ -1,13 +1,13 @@
+default: jacobi_mpi.out
 
-jacobi: jacobi.c
+jacobi.out: jacobi.c
 	clang -v -g $^ -o $@ -lm
-	objdump -d jacobi >jacobi.objdump
 
-run: jacobi
-	./jacobi 1024 1024
+run: jacobi_mpi.out
+	mpirun -np 4 ./jacobi_mpi.out 1024 1024
 
-mpi: jacobi_mpi.c
-	mpicc $^ -lm -o jacobi_mpi
+jacobi_mpi.out: jacobi_mpi.c
+	mpicc $^ -lm -o $@
 
 clean:
-	rm jacobi jacobi_mpi
+	rm *.out
