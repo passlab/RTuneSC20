@@ -34,7 +34,7 @@ The program prints the total execution time, tuning time, and the predicted numb
 mpirun -np 4 ./jacobi_mpi.out 1024 1024
 ...
 Saved iterations based on mits: 37420 out of 50000
-Fitting curve is: y = -5.41254e-06 * x + -8.17812, targeted y = -10
+Fitting curve is: y = -5.41254e-06 * x + -8.17812
 Predicted finishing iteration is: 336603
 Saved iterations based on error tolerance: 324023 out of 336603
 Computing Time: 57280, Tuning Time: 0.52026, Total Time: 57280
